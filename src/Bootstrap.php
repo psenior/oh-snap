@@ -42,7 +42,7 @@ else
 </head>
 
 <body>
-  <img src="http://www.myflorida.com/accessflorida/images/logo.png">
+  <a href="http://www.myflorida.com/accessflorida" target="_blank"><img src="http://www.myflorida.com/accessflorida/images/logo.png"></a>
 
   <p>This web app helps you find out when your Electronic Benefits Transfer (EBT) funds are deposited into your Supplemental Nutrition Assistance Program (SNAP) account each month.</p>
 
