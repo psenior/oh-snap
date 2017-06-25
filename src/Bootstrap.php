@@ -23,20 +23,23 @@ else
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css">
 
   <style type="text/css">
-    body {
-      margin: 40px auto;
-      max-width: 650px;
-      line-height: 1.6;
-      font-size: 18px;
-      color: #444;
-      padding: 0 10px
-    }
-    
-    h1,
-    h2,
-    h3 {
-      line-height: 1.2
-    }
+  body {
+    margin: 1em auto;
+    max-width: 40em;
+    padding: 0 .62em
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .button-large {
+    font-size: 1.4rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    padding: 0 2rem;
+  }
   </style>
 
 </head>
@@ -54,12 +57,19 @@ else
 
   <p>Enter your Case Number below:</p>
 
-  <input id="caseNum">
+  <form>
+    <fieldset>
 
-  <br>
-  <button type="button" onclick="myFunction()">Submit</button>
+    <label for="caseNum">Case Number</label>
 
-  <p id="demo"></p>
+    <input type="text" id="caseNum">
+
+    <button class="button button-large" type="button" onclick="myFunction()">Submit</button>
+
+    <h2 id="demo"></h2>
+
+    </fieldset>
+  </form>
 
   <script>
     function myFunction() {
@@ -235,7 +245,7 @@ else
       console.log("answer is " + answer);
 
       var string = "";
-      string = "Benefits will be deposited on the  " + answer + " of each month.";
+      string = "Benefits will be deposited on the " + answer + " of each month.";
 
       document.getElementById("demo").innerHTML = string;
     }
